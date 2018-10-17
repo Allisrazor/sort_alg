@@ -26,10 +26,12 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    newpushbutton.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    newpushbutton.h
 
 FORMS += \
         mainwindow.ui
