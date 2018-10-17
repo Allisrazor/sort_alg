@@ -14,12 +14,16 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QListView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -48,9 +52,8 @@ public:
     QPushButton *pushButton_B_27;
     QPushButton *pushButton_B_28;
     QPushButton *pushButton_B_29;
-    QWidget *widget;
+    QWidget *layoutWidget1;
     QGridLayout *gridLayout_A;
-    QPushButton *pushButton_A_11;
     QPushButton *pushButton_A_12;
     QPushButton *pushButton_A_13;
     QPushButton *pushButton_A_14;
@@ -61,13 +64,47 @@ public:
     QPushButton *pushButton_A_19;
     QPushButton *pushButton_A_21;
     QPushButton *pushButton_A_22;
-    QPushButton *pushButton_A_23;
     QPushButton *pushButton_A_24;
     QPushButton *pushButton_A_25;
     QPushButton *pushButton_A_26;
     QPushButton *pushButton_A_27;
     QPushButton *pushButton_A_28;
     QPushButton *pushButton_A_29;
+    QPushButton *pushButton_A_23;
+    QPushButton *pushButton_A_11;
+    QWidget *layoutWidget_2;
+    QHBoxLayout *horizontalLayout_B;
+    QLabel *label_B_1;
+    QLabel *label_B_2;
+    QLabel *label_B_3;
+    QLabel *label_B_4;
+    QLabel *label_B_5;
+    QLabel *label_B_6;
+    QLabel *label_B_7;
+    QLabel *label_B_8;
+    QLabel *label_B_9;
+    QWidget *layoutWidget_3;
+    QVBoxLayout *verticalLayout_B;
+    QLabel *label_B1;
+    QLabel *label_B2;
+    QLabel *label_cond_A;
+    QLabel *label_cond_B;
+    QListView *listView;
+    QWidget *layoutWidget2;
+    QHBoxLayout *horizontalLayout_A;
+    QLabel *label_A_1;
+    QLabel *label_A_2;
+    QLabel *label_A_3;
+    QLabel *label_A_4;
+    QLabel *label_A_5;
+    QLabel *label_A_6;
+    QLabel *label_A_7;
+    QLabel *label_A_8;
+    QLabel *label_A_9;
+    QWidget *layoutWidget3;
+    QVBoxLayout *verticalLayout_A;
+    QLabel *label_A1;
+    QLabel *label_A2;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -76,12 +113,12 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(784, 541);
+        MainWindow->resize(855, 634);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         layoutWidget = new QWidget(centralWidget);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(50, 260, 451, 101));
+        layoutWidget->setGeometry(QRect(50, 340, 451, 101));
         gridLayout_B = new QGridLayout(layoutWidget);
         gridLayout_B->setSpacing(0);
         gridLayout_B->setContentsMargins(11, 11, 11, 11);
@@ -218,51 +255,44 @@ public:
 
         gridLayout_B->addWidget(pushButton_B_29, 1, 8, 1, 1);
 
-        widget = new QWidget(centralWidget);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(50, 70, 451, 101));
-        gridLayout_A = new QGridLayout(widget);
+        layoutWidget1 = new QWidget(centralWidget);
+        layoutWidget1->setObjectName(QStringLiteral("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(50, 70, 451, 101));
+        gridLayout_A = new QGridLayout(layoutWidget1);
         gridLayout_A->setSpacing(0);
         gridLayout_A->setContentsMargins(11, 11, 11, 11);
         gridLayout_A->setObjectName(QStringLiteral("gridLayout_A"));
         gridLayout_A->setSizeConstraint(QLayout::SetNoConstraint);
         gridLayout_A->setContentsMargins(0, 0, 0, 0);
-        pushButton_A_11 = new QPushButton(widget);
-        pushButton_A_11->setObjectName(QStringLiteral("pushButton_A_11"));
-        sizePolicy.setHeightForWidth(pushButton_A_11->sizePolicy().hasHeightForWidth());
-        pushButton_A_11->setSizePolicy(sizePolicy);
-
-        gridLayout_A->addWidget(pushButton_A_11, 0, 0, 1, 1);
-
-        pushButton_A_12 = new QPushButton(widget);
+        pushButton_A_12 = new QPushButton(layoutWidget1);
         pushButton_A_12->setObjectName(QStringLiteral("pushButton_A_12"));
         sizePolicy.setHeightForWidth(pushButton_A_12->sizePolicy().hasHeightForWidth());
         pushButton_A_12->setSizePolicy(sizePolicy);
 
         gridLayout_A->addWidget(pushButton_A_12, 0, 1, 1, 1);
 
-        pushButton_A_13 = new QPushButton(widget);
+        pushButton_A_13 = new QPushButton(layoutWidget1);
         pushButton_A_13->setObjectName(QStringLiteral("pushButton_A_13"));
         sizePolicy.setHeightForWidth(pushButton_A_13->sizePolicy().hasHeightForWidth());
         pushButton_A_13->setSizePolicy(sizePolicy);
 
         gridLayout_A->addWidget(pushButton_A_13, 0, 2, 1, 1);
 
-        pushButton_A_14 = new QPushButton(widget);
+        pushButton_A_14 = new QPushButton(layoutWidget1);
         pushButton_A_14->setObjectName(QStringLiteral("pushButton_A_14"));
         sizePolicy.setHeightForWidth(pushButton_A_14->sizePolicy().hasHeightForWidth());
         pushButton_A_14->setSizePolicy(sizePolicy);
 
         gridLayout_A->addWidget(pushButton_A_14, 0, 3, 1, 1);
 
-        pushButton_A_15 = new QPushButton(widget);
+        pushButton_A_15 = new QPushButton(layoutWidget1);
         pushButton_A_15->setObjectName(QStringLiteral("pushButton_A_15"));
         sizePolicy.setHeightForWidth(pushButton_A_15->sizePolicy().hasHeightForWidth());
         pushButton_A_15->setSizePolicy(sizePolicy);
 
         gridLayout_A->addWidget(pushButton_A_15, 0, 4, 1, 1);
 
-        pushButton_A_16 = new QPushButton(widget);
+        pushButton_A_16 = new QPushButton(layoutWidget1);
         pushButton_A_16->setObjectName(QStringLiteral("pushButton_A_16"));
         sizePolicy.setHeightForWidth(pushButton_A_16->sizePolicy().hasHeightForWidth());
         pushButton_A_16->setSizePolicy(sizePolicy);
@@ -270,94 +300,252 @@ public:
 
         gridLayout_A->addWidget(pushButton_A_16, 0, 5, 1, 1);
 
-        pushButton_A_17 = new QPushButton(widget);
+        pushButton_A_17 = new QPushButton(layoutWidget1);
         pushButton_A_17->setObjectName(QStringLiteral("pushButton_A_17"));
         sizePolicy.setHeightForWidth(pushButton_A_17->sizePolicy().hasHeightForWidth());
         pushButton_A_17->setSizePolicy(sizePolicy);
 
         gridLayout_A->addWidget(pushButton_A_17, 0, 6, 1, 1);
 
-        pushButton_A_18 = new QPushButton(widget);
+        pushButton_A_18 = new QPushButton(layoutWidget1);
         pushButton_A_18->setObjectName(QStringLiteral("pushButton_A_18"));
         sizePolicy.setHeightForWidth(pushButton_A_18->sizePolicy().hasHeightForWidth());
         pushButton_A_18->setSizePolicy(sizePolicy);
 
         gridLayout_A->addWidget(pushButton_A_18, 0, 7, 1, 1);
 
-        pushButton_A_19 = new QPushButton(widget);
+        pushButton_A_19 = new QPushButton(layoutWidget1);
         pushButton_A_19->setObjectName(QStringLiteral("pushButton_A_19"));
         sizePolicy.setHeightForWidth(pushButton_A_19->sizePolicy().hasHeightForWidth());
         pushButton_A_19->setSizePolicy(sizePolicy);
 
         gridLayout_A->addWidget(pushButton_A_19, 0, 8, 1, 1);
 
-        pushButton_A_21 = new QPushButton(widget);
+        pushButton_A_21 = new QPushButton(layoutWidget1);
         pushButton_A_21->setObjectName(QStringLiteral("pushButton_A_21"));
         sizePolicy.setHeightForWidth(pushButton_A_21->sizePolicy().hasHeightForWidth());
         pushButton_A_21->setSizePolicy(sizePolicy);
 
         gridLayout_A->addWidget(pushButton_A_21, 1, 0, 1, 1);
 
-        pushButton_A_22 = new QPushButton(widget);
+        pushButton_A_22 = new QPushButton(layoutWidget1);
         pushButton_A_22->setObjectName(QStringLiteral("pushButton_A_22"));
         sizePolicy.setHeightForWidth(pushButton_A_22->sizePolicy().hasHeightForWidth());
         pushButton_A_22->setSizePolicy(sizePolicy);
 
         gridLayout_A->addWidget(pushButton_A_22, 1, 1, 1, 1);
 
-        pushButton_A_23 = new QPushButton(widget);
-        pushButton_A_23->setObjectName(QStringLiteral("pushButton_A_23"));
-        sizePolicy.setHeightForWidth(pushButton_A_23->sizePolicy().hasHeightForWidth());
-        pushButton_A_23->setSizePolicy(sizePolicy);
-
-        gridLayout_A->addWidget(pushButton_A_23, 1, 2, 1, 1);
-
-        pushButton_A_24 = new QPushButton(widget);
+        pushButton_A_24 = new QPushButton(layoutWidget1);
         pushButton_A_24->setObjectName(QStringLiteral("pushButton_A_24"));
         sizePolicy.setHeightForWidth(pushButton_A_24->sizePolicy().hasHeightForWidth());
         pushButton_A_24->setSizePolicy(sizePolicy);
 
         gridLayout_A->addWidget(pushButton_A_24, 1, 3, 1, 1);
 
-        pushButton_A_25 = new QPushButton(widget);
+        pushButton_A_25 = new QPushButton(layoutWidget1);
         pushButton_A_25->setObjectName(QStringLiteral("pushButton_A_25"));
         sizePolicy.setHeightForWidth(pushButton_A_25->sizePolicy().hasHeightForWidth());
         pushButton_A_25->setSizePolicy(sizePolicy);
 
         gridLayout_A->addWidget(pushButton_A_25, 1, 4, 1, 1);
 
-        pushButton_A_26 = new QPushButton(widget);
+        pushButton_A_26 = new QPushButton(layoutWidget1);
         pushButton_A_26->setObjectName(QStringLiteral("pushButton_A_26"));
         sizePolicy.setHeightForWidth(pushButton_A_26->sizePolicy().hasHeightForWidth());
         pushButton_A_26->setSizePolicy(sizePolicy);
 
         gridLayout_A->addWidget(pushButton_A_26, 1, 5, 1, 1);
 
-        pushButton_A_27 = new QPushButton(widget);
+        pushButton_A_27 = new QPushButton(layoutWidget1);
         pushButton_A_27->setObjectName(QStringLiteral("pushButton_A_27"));
         sizePolicy.setHeightForWidth(pushButton_A_27->sizePolicy().hasHeightForWidth());
         pushButton_A_27->setSizePolicy(sizePolicy);
 
         gridLayout_A->addWidget(pushButton_A_27, 1, 6, 1, 1);
 
-        pushButton_A_28 = new QPushButton(widget);
+        pushButton_A_28 = new QPushButton(layoutWidget1);
         pushButton_A_28->setObjectName(QStringLiteral("pushButton_A_28"));
         sizePolicy.setHeightForWidth(pushButton_A_28->sizePolicy().hasHeightForWidth());
         pushButton_A_28->setSizePolicy(sizePolicy);
 
         gridLayout_A->addWidget(pushButton_A_28, 1, 7, 1, 1);
 
-        pushButton_A_29 = new QPushButton(widget);
+        pushButton_A_29 = new QPushButton(layoutWidget1);
         pushButton_A_29->setObjectName(QStringLiteral("pushButton_A_29"));
         sizePolicy.setHeightForWidth(pushButton_A_29->sizePolicy().hasHeightForWidth());
         pushButton_A_29->setSizePolicy(sizePolicy);
 
         gridLayout_A->addWidget(pushButton_A_29, 1, 8, 1, 1);
 
+        pushButton_A_23 = new QPushButton(layoutWidget1);
+        pushButton_A_23->setObjectName(QStringLiteral("pushButton_A_23"));
+        sizePolicy.setHeightForWidth(pushButton_A_23->sizePolicy().hasHeightForWidth());
+        pushButton_A_23->setSizePolicy(sizePolicy);
+
+        gridLayout_A->addWidget(pushButton_A_23, 1, 2, 1, 1);
+
+        pushButton_A_11 = new QPushButton(layoutWidget1);
+        pushButton_A_11->setObjectName(QStringLiteral("pushButton_A_11"));
+        sizePolicy.setHeightForWidth(pushButton_A_11->sizePolicy().hasHeightForWidth());
+        pushButton_A_11->setSizePolicy(sizePolicy);
+
+        gridLayout_A->addWidget(pushButton_A_11, 0, 0, 1, 1);
+
+        layoutWidget_2 = new QWidget(centralWidget);
+        layoutWidget_2->setObjectName(QStringLiteral("layoutWidget_2"));
+        layoutWidget_2->setGeometry(QRect(70, 320, 441, 18));
+        horizontalLayout_B = new QHBoxLayout(layoutWidget_2);
+        horizontalLayout_B->setSpacing(6);
+        horizontalLayout_B->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_B->setObjectName(QStringLiteral("horizontalLayout_B"));
+        horizontalLayout_B->setContentsMargins(0, 0, 0, 0);
+        label_B_1 = new QLabel(layoutWidget_2);
+        label_B_1->setObjectName(QStringLiteral("label_B_1"));
+
+        horizontalLayout_B->addWidget(label_B_1);
+
+        label_B_2 = new QLabel(layoutWidget_2);
+        label_B_2->setObjectName(QStringLiteral("label_B_2"));
+
+        horizontalLayout_B->addWidget(label_B_2);
+
+        label_B_3 = new QLabel(layoutWidget_2);
+        label_B_3->setObjectName(QStringLiteral("label_B_3"));
+
+        horizontalLayout_B->addWidget(label_B_3);
+
+        label_B_4 = new QLabel(layoutWidget_2);
+        label_B_4->setObjectName(QStringLiteral("label_B_4"));
+
+        horizontalLayout_B->addWidget(label_B_4);
+
+        label_B_5 = new QLabel(layoutWidget_2);
+        label_B_5->setObjectName(QStringLiteral("label_B_5"));
+
+        horizontalLayout_B->addWidget(label_B_5);
+
+        label_B_6 = new QLabel(layoutWidget_2);
+        label_B_6->setObjectName(QStringLiteral("label_B_6"));
+
+        horizontalLayout_B->addWidget(label_B_6);
+
+        label_B_7 = new QLabel(layoutWidget_2);
+        label_B_7->setObjectName(QStringLiteral("label_B_7"));
+
+        horizontalLayout_B->addWidget(label_B_7);
+
+        label_B_8 = new QLabel(layoutWidget_2);
+        label_B_8->setObjectName(QStringLiteral("label_B_8"));
+
+        horizontalLayout_B->addWidget(label_B_8);
+
+        label_B_9 = new QLabel(layoutWidget_2);
+        label_B_9->setObjectName(QStringLiteral("label_B_9"));
+
+        horizontalLayout_B->addWidget(label_B_9);
+
+        layoutWidget_3 = new QWidget(centralWidget);
+        layoutWidget_3->setObjectName(QStringLiteral("layoutWidget_3"));
+        layoutWidget_3->setGeometry(QRect(30, 350, 16, 81));
+        verticalLayout_B = new QVBoxLayout(layoutWidget_3);
+        verticalLayout_B->setSpacing(6);
+        verticalLayout_B->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_B->setObjectName(QStringLiteral("verticalLayout_B"));
+        verticalLayout_B->setContentsMargins(0, 0, 0, 0);
+        label_B1 = new QLabel(layoutWidget_3);
+        label_B1->setObjectName(QStringLiteral("label_B1"));
+
+        verticalLayout_B->addWidget(label_B1);
+
+        label_B2 = new QLabel(layoutWidget_3);
+        label_B2->setObjectName(QStringLiteral("label_B2"));
+
+        verticalLayout_B->addWidget(label_B2);
+
+        label_cond_A = new QLabel(centralWidget);
+        label_cond_A->setObjectName(QStringLiteral("label_cond_A"));
+        label_cond_A->setGeometry(QRect(240, 30, 101, 16));
+        label_cond_B = new QLabel(centralWidget);
+        label_cond_B->setObjectName(QStringLiteral("label_cond_B"));
+        label_cond_B->setGeometry(QRect(240, 300, 101, 16));
+        listView = new QListView(centralWidget);
+        listView->setObjectName(QStringLiteral("listView"));
+        listView->setGeometry(QRect(580, 250, 171, 261));
+        layoutWidget2 = new QWidget(centralWidget);
+        layoutWidget2->setObjectName(QStringLiteral("layoutWidget2"));
+        layoutWidget2->setGeometry(QRect(70, 50, 441, 18));
+        horizontalLayout_A = new QHBoxLayout(layoutWidget2);
+        horizontalLayout_A->setSpacing(6);
+        horizontalLayout_A->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_A->setObjectName(QStringLiteral("horizontalLayout_A"));
+        horizontalLayout_A->setContentsMargins(0, 0, 0, 0);
+        label_A_1 = new QLabel(layoutWidget2);
+        label_A_1->setObjectName(QStringLiteral("label_A_1"));
+
+        horizontalLayout_A->addWidget(label_A_1);
+
+        label_A_2 = new QLabel(layoutWidget2);
+        label_A_2->setObjectName(QStringLiteral("label_A_2"));
+
+        horizontalLayout_A->addWidget(label_A_2);
+
+        label_A_3 = new QLabel(layoutWidget2);
+        label_A_3->setObjectName(QStringLiteral("label_A_3"));
+
+        horizontalLayout_A->addWidget(label_A_3);
+
+        label_A_4 = new QLabel(layoutWidget2);
+        label_A_4->setObjectName(QStringLiteral("label_A_4"));
+
+        horizontalLayout_A->addWidget(label_A_4);
+
+        label_A_5 = new QLabel(layoutWidget2);
+        label_A_5->setObjectName(QStringLiteral("label_A_5"));
+
+        horizontalLayout_A->addWidget(label_A_5);
+
+        label_A_6 = new QLabel(layoutWidget2);
+        label_A_6->setObjectName(QStringLiteral("label_A_6"));
+
+        horizontalLayout_A->addWidget(label_A_6);
+
+        label_A_7 = new QLabel(layoutWidget2);
+        label_A_7->setObjectName(QStringLiteral("label_A_7"));
+
+        horizontalLayout_A->addWidget(label_A_7);
+
+        label_A_8 = new QLabel(layoutWidget2);
+        label_A_8->setObjectName(QStringLiteral("label_A_8"));
+
+        horizontalLayout_A->addWidget(label_A_8);
+
+        label_A_9 = new QLabel(layoutWidget2);
+        label_A_9->setObjectName(QStringLiteral("label_A_9"));
+
+        horizontalLayout_A->addWidget(label_A_9);
+
+        layoutWidget3 = new QWidget(centralWidget);
+        layoutWidget3->setObjectName(QStringLiteral("layoutWidget3"));
+        layoutWidget3->setGeometry(QRect(30, 80, 16, 81));
+        verticalLayout_A = new QVBoxLayout(layoutWidget3);
+        verticalLayout_A->setSpacing(6);
+        verticalLayout_A->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_A->setObjectName(QStringLiteral("verticalLayout_A"));
+        verticalLayout_A->setContentsMargins(0, 0, 0, 0);
+        label_A1 = new QLabel(layoutWidget3);
+        label_A1->setObjectName(QStringLiteral("label_A1"));
+
+        verticalLayout_A->addWidget(label_A1);
+
+        label_A2 = new QLabel(layoutWidget3);
+        label_A2->setObjectName(QStringLiteral("label_A2"));
+
+        verticalLayout_A->addWidget(label_A2);
+
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 784, 26));
+        menuBar->setGeometry(QRect(0, 0, 855, 26));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -373,7 +561,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "sort_alg", 0));
         pushButton_B_11->setText(QString());
         pushButton_B_12->setText(QString());
         pushButton_B_13->setText(QString());
@@ -392,7 +580,6 @@ public:
         pushButton_B_27->setText(QString());
         pushButton_B_28->setText(QString());
         pushButton_B_29->setText(QString());
-        pushButton_A_11->setText(QString());
         pushButton_A_12->setText(QString());
         pushButton_A_13->setText(QString());
         pushButton_A_14->setText(QString());
@@ -403,13 +590,38 @@ public:
         pushButton_A_19->setText(QString());
         pushButton_A_21->setText(QString());
         pushButton_A_22->setText(QString());
-        pushButton_A_23->setText(QString());
         pushButton_A_24->setText(QString());
         pushButton_A_25->setText(QString());
         pushButton_A_26->setText(QString());
         pushButton_A_27->setText(QString());
         pushButton_A_28->setText(QString());
         pushButton_A_29->setText(QString());
+        pushButton_A_23->setText(QString());
+        pushButton_A_11->setText(QString());
+        label_B_1->setText(QApplication::translate("MainWindow", "1", 0));
+        label_B_2->setText(QApplication::translate("MainWindow", "2", 0));
+        label_B_3->setText(QApplication::translate("MainWindow", "3", 0));
+        label_B_4->setText(QApplication::translate("MainWindow", "4", 0));
+        label_B_5->setText(QApplication::translate("MainWindow", "5", 0));
+        label_B_6->setText(QApplication::translate("MainWindow", "6", 0));
+        label_B_7->setText(QApplication::translate("MainWindow", "7", 0));
+        label_B_8->setText(QApplication::translate("MainWindow", "8", 0));
+        label_B_9->setText(QApplication::translate("MainWindow", "9", 0));
+        label_B1->setText(QApplication::translate("MainWindow", "1", 0));
+        label_B2->setText(QApplication::translate("MainWindow", "2", 0));
+        label_cond_A->setText(QApplication::translate("MainWindow", "\320\241\320\276\321\201\321\202\320\276\321\217\320\275\320\270\320\265 \320\220", 0));
+        label_cond_B->setText(QApplication::translate("MainWindow", "\320\241\320\276\321\201\321\202\320\276\321\217\320\275\320\270\320\265 B", 0));
+        label_A_1->setText(QApplication::translate("MainWindow", "1", 0));
+        label_A_2->setText(QApplication::translate("MainWindow", "2", 0));
+        label_A_3->setText(QApplication::translate("MainWindow", "3", 0));
+        label_A_4->setText(QApplication::translate("MainWindow", "4", 0));
+        label_A_5->setText(QApplication::translate("MainWindow", "5", 0));
+        label_A_6->setText(QApplication::translate("MainWindow", "6", 0));
+        label_A_7->setText(QApplication::translate("MainWindow", "7", 0));
+        label_A_8->setText(QApplication::translate("MainWindow", "8", 0));
+        label_A_9->setText(QApplication::translate("MainWindow", "9", 0));
+        label_A1->setText(QApplication::translate("MainWindow", "1", 0));
+        label_A2->setText(QApplication::translate("MainWindow", "2", 0));
     } // retranslateUi
 
 };
