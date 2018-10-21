@@ -20,7 +20,7 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_MainWindow_t {
     QByteArrayData data[6];
-    char stringdata[107];
+    char stringdata[105];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -34,11 +34,11 @@ QT_MOC_LITERAL(1, 11, 20),
 QT_MOC_LITERAL(2, 32, 0),
 QT_MOC_LITERAL(3, 33, 20),
 QT_MOC_LITERAL(4, 54, 24),
-QT_MOC_LITERAL(5, 79, 26)
+QT_MOC_LITERAL(5, 79, 24)
     },
     "MainWindow\0NumberButtonAClicked\0\0"
     "NumberButtonBClicked\0on_shuffleButton_clicked\0"
-    "on_shuffleButton_2_clicked\0"
+    "on_restoreButton_clicked\0"
 };
 #undef QT_MOC_LITERAL
 
@@ -78,7 +78,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 0: _t->NumberButtonAClicked(); break;
         case 1: _t->NumberButtonBClicked(); break;
         case 2: _t->on_shuffleButton_clicked(); break;
-        case 3: _t->on_shuffleButton_2_clicked(); break;
+        case 3: _t->on_restoreButton_clicked(); break;
         default: ;
         }
     }

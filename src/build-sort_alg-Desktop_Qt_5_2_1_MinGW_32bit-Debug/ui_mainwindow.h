@@ -108,7 +108,7 @@ public:
     QLabel *label_max_Numb;
     QLabel *label_max_Numb_2;
     QPushButton *shuffleButton;
-    QPushButton *shuffleButton_2;
+    QPushButton *restoreButton;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -629,9 +629,9 @@ public:
         shuffleButton = new QPushButton(centralWidget);
         shuffleButton->setObjectName(QStringLiteral("shuffleButton"));
         shuffleButton->setGeometry(QRect(580, 70, 171, 51));
-        shuffleButton_2 = new QPushButton(centralWidget);
-        shuffleButton_2->setObjectName(QStringLiteral("shuffleButton_2"));
-        shuffleButton_2->setGeometry(QRect(580, 10, 171, 51));
+        restoreButton = new QPushButton(centralWidget);
+        restoreButton->setObjectName(QStringLiteral("restoreButton"));
+        restoreButton->setGeometry(QRect(580, 10, 171, 51));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -715,7 +715,7 @@ public:
         label_max_Numb_2->setText(QApplication::translate("MainWindow", "<html><head/><body><p>\320\234\320\260\320\272\321\201\320\270\320\274\320\260\320\273\321\214\320\275\321\213\320\271 \320\275\320\276\320\274\320\265\321\200: 0</p></body></html>", 0));
         shuffleButton->setText(QApplication::translate("MainWindow", "\320\241\320\263\320\265\320\275\320\265\321\200\320\270\321\200\320\276\320\262\320\260\321\202\321\214 \321\201\320\273\321\203\321\207\320\260\320\275\321\213\320\265\n"
 "\321\201\320\276\321\201\321\202\320\276\321\217\320\275\320\270\321\217 \320\220 \320\270 B", 0));
-        shuffleButton_2->setText(QApplication::translate("MainWindow", "\320\241\320\261\321\200\320\276\321\201\320\270\321\202\321\214 \321\201\320\276\321\201\321\202\320\276\321\217\320\275\320\270\321\217", 0));
+        restoreButton->setText(QApplication::translate("MainWindow", "\320\241\320\261\321\200\320\276\321\201\320\270\321\202\321\214 \321\201\320\276\321\201\321\202\320\276\321\217\320\275\320\270\321\217", 0));
     } // retranslateUi
 
 };
