@@ -12,8 +12,3 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
-
-void MainWindow::on_pushButton_A_13_clicked()
-{
-
-}
