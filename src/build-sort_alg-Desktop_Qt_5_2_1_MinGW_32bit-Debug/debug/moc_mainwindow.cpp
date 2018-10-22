@@ -19,8 +19,13 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_MainWindow_t {
+<<<<<<< HEAD
     QByteArrayData data[3];
     char stringdata[40];
+=======
+    QByteArrayData data[6];
+    char stringdata[105];
+>>>>>>> 9df8b43ba7743d001e468c457a19ea022d43e57d
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -30,11 +35,23 @@ struct qt_meta_stringdata_MainWindow_t {
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
 QT_MOC_LITERAL(0, 0, 10),
+<<<<<<< HEAD
 QT_MOC_LITERAL(1, 11, 26),
 QT_MOC_LITERAL(2, 38, 0)
     },
     "MainWindow\0on_pushButton_A_13_clicked\0"
     "\0"
+=======
+QT_MOC_LITERAL(1, 11, 20),
+QT_MOC_LITERAL(2, 32, 0),
+QT_MOC_LITERAL(3, 33, 20),
+QT_MOC_LITERAL(4, 54, 24),
+QT_MOC_LITERAL(5, 79, 24)
+    },
+    "MainWindow\0NumberButtonAClicked\0\0"
+    "NumberButtonBClicked\0on_shuffleButton_clicked\0"
+    "on_restoreButton_clicked\0"
+>>>>>>> 9df8b43ba7743d001e468c457a19ea022d43e57d
 };
 #undef QT_MOC_LITERAL
 
@@ -44,7 +61,11 @@ static const uint qt_meta_data_MainWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
+<<<<<<< HEAD
        1,   14, // methods
+=======
+       4,   14, // methods
+>>>>>>> 9df8b43ba7743d001e468c457a19ea022d43e57d
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -52,10 +73,23 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
+<<<<<<< HEAD
        1,    0,   19,    2, 0x08,
 
  // slots: parameters
     QMetaType::Void,
+=======
+       1,    0,   34,    2, 0x08,
+       3,    0,   35,    2, 0x08,
+       4,    0,   36,    2, 0x08,
+       5,    0,   37,    2, 0x08,
+
+ // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+>>>>>>> 9df8b43ba7743d001e468c457a19ea022d43e57d
 
        0        // eod
 };
@@ -65,7 +99,14 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     if (_c == QMetaObject::InvokeMetaMethod) {
         MainWindow *_t = static_cast<MainWindow *>(_o);
         switch (_id) {
+<<<<<<< HEAD
         case 0: _t->on_pushButton_A_13_clicked(); break;
+=======
+        case 0: _t->NumberButtonAClicked(); break;
+        case 1: _t->NumberButtonBClicked(); break;
+        case 2: _t->on_shuffleButton_clicked(); break;
+        case 3: _t->on_restoreButton_clicked(); break;
+>>>>>>> 9df8b43ba7743d001e468c457a19ea022d43e57d
         default: ;
         }
     }
@@ -97,6 +138,7 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
+<<<<<<< HEAD
         if (_id < 1)
             qt_static_metacall(this, _c, _id, _a);
         _id -= 1;
@@ -104,6 +146,15 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         if (_id < 1)
             *reinterpret_cast<int*>(_a[0]) = -1;
         _id -= 1;
+=======
+        if (_id < 4)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 4;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 4)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 4;
+>>>>>>> 9df8b43ba7743d001e468c457a19ea022d43e57d
     }
     return _id;
 }
