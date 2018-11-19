@@ -1089,19 +1089,6 @@
      <string>Состояние B</string>
     </property>
    </widget>
-   <widget class="QListView" name="listView">
-    <property name="geometry">
-     <rect>
-      <x>580</x>
-      <y>250</y>
-      <width>171</width>
-      <height>261</height>
-     </rect>
-    </property>
-    <property name="selectionBehavior">
-     <enum>QAbstractItemView::SelectItems</enum>
-    </property>
-   </widget>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
@@ -1254,6 +1241,42 @@
     </property>
     <property name="text">
      <string>Сбросить состояния</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SolveButton">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>180</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Расчет</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GenerateButton">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>130</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Сгенерировать 17 чисел</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>250</y>
+      <width>231</width>
+      <height>251</height>
+     </rect>
     </property>
    </widget>
   </widget>

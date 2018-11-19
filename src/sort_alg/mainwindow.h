@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QStack>
+#include "solver.h"
 
 namespace Ui {
 class MainWindow;
@@ -24,10 +25,15 @@ private slots:
 
     void on_restoreButton_clicked();
 
+    void on_SolveButton_clicked();
+
+    void on_GenerateButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     QStack<int> *CondNumberA;
     QStack<int> *CondNumberB;
+    solver *Solver;
 };
 
 #endif // MAINWINDOW_H

@@ -17,7 +17,7 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QListView>
+#include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -89,7 +89,6 @@ public:
     QLabel *label_B2;
     QLabel *label_cond_A;
     QLabel *label_cond_B;
-    QListView *listView;
     QWidget *layoutWidget2;
     QHBoxLayout *horizontalLayout_A;
     QLabel *label_A_1;
@@ -109,6 +108,9 @@ public:
     QLabel *label_max_Numb_2;
     QPushButton *shuffleButton;
     QPushButton *restoreButton;
+    QPushButton *SolveButton;
+    QPushButton *GenerateButton;
+    QListWidget *listWidget;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -545,10 +547,6 @@ public:
         label_cond_B = new QLabel(centralWidget);
         label_cond_B->setObjectName(QStringLiteral("label_cond_B"));
         label_cond_B->setGeometry(QRect(240, 300, 101, 16));
-        listView = new QListView(centralWidget);
-        listView->setObjectName(QStringLiteral("listView"));
-        listView->setGeometry(QRect(580, 250, 171, 261));
-        listView->setSelectionBehavior(QAbstractItemView::SelectItems);
         layoutWidget2 = new QWidget(centralWidget);
         layoutWidget2->setObjectName(QStringLiteral("layoutWidget2"));
         layoutWidget2->setGeometry(QRect(70, 50, 441, 18));
@@ -632,6 +630,15 @@ public:
         restoreButton = new QPushButton(centralWidget);
         restoreButton->setObjectName(QStringLiteral("restoreButton"));
         restoreButton->setGeometry(QRect(580, 10, 171, 51));
+        SolveButton = new QPushButton(centralWidget);
+        SolveButton->setObjectName(QStringLiteral("SolveButton"));
+        SolveButton->setGeometry(QRect(580, 180, 171, 41));
+        GenerateButton = new QPushButton(centralWidget);
+        GenerateButton->setObjectName(QStringLiteral("GenerateButton"));
+        GenerateButton->setGeometry(QRect(580, 130, 171, 41));
+        listWidget = new QListWidget(centralWidget);
+        listWidget->setObjectName(QStringLiteral("listWidget"));
+        listWidget->setGeometry(QRect(580, 250, 231, 251));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -716,6 +723,8 @@ public:
         shuffleButton->setText(QApplication::translate("MainWindow", "\320\241\320\263\320\265\320\275\320\265\321\200\320\270\321\200\320\276\320\262\320\260\321\202\321\214 \321\201\320\273\321\203\321\207\320\260\320\275\321\213\320\265\n"
 "\321\201\320\276\321\201\321\202\320\276\321\217\320\275\320\270\321\217 \320\220 \320\270 B", 0));
         restoreButton->setText(QApplication::translate("MainWindow", "\320\241\320\261\321\200\320\276\321\201\320\270\321\202\321\214 \321\201\320\276\321\201\321\202\320\276\321\217\320\275\320\270\321\217", 0));
+        SolveButton->setText(QApplication::translate("MainWindow", "\320\240\320\260\321\201\321\207\320\265\321\202", 0));
+        GenerateButton->setText(QApplication::translate("MainWindow", "\320\241\320\263\320\265\320\275\320\265\321\200\320\270\321\200\320\276\320\262\320\260\321\202\321\214 17 \321\207\320\270\321\201\320\265\320\273", 0));
     } // retranslateUi
 
 };
