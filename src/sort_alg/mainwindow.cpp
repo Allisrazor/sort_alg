@@ -209,22 +209,32 @@ void MainWindow::on_SolveButton_clicked()
         if (reply == QMessageBox::Yes) {
             int Count = Solver->Solve(StateA,StateB);
         }
+        if (Solver->Answer->isEmpty()) {
+            ui->listWidget->clear();
+            ui->listWidget->addItem("Решение не найдено");
+        }
         break;
     case 0:
         int Count = Solver->Solve(StateA,StateB);
+        if (Solver->Answer->isEmpty()) {
+            ui->listWidget->clear();
+            ui->listWidget->addItem("Решение не найдено");
+        }
         break;
     }
 
-    ui->listWidget->clear();
-    if (!Solver->Answer->isEmpty()) {ui->listWidget->addItem("Ходы для решения:");}
-    int step = 1;
-    while (!Solver->Answer->isEmpty()) {
-        AnswerNode AnswerNodeBuf = Solver->Answer->pop();
-        ui->listWidget->addItem(QString::number(step) +" ход: Из [" + QString::number((AnswerNodeBuf.Index1 / 9) + 1) + ", " +
-                                QString::number((AnswerNodeBuf.Index1 % 9) + 1) + "] в [" +
-                                QString::number((AnswerNodeBuf.Index2 / 9) + 1) + ", " +
-                                QString::number((AnswerNodeBuf.Index2 % 9) + 1) + "]");
-        step++;
+    if (!Solver->Answer->isEmpty()) {
+        ui->listWidget->clear();
+        ui->listWidget->addItem("Ходы для решения:");
+        int step = 1;
+        while (!Solver->Answer->isEmpty()) {
+            AnswerNode AnswerNodeBuf = Solver->Answer->pop();
+            ui->listWidget->addItem(QString::number(step) +" ход: Из [" + QString::number((AnswerNodeBuf.Index1 / 9) + 1) + ", " +
+                                    QString::number((AnswerNodeBuf.Index1 % 9) + 1) + "] в [" +
+                                    QString::number((AnswerNodeBuf.Index2 / 9) + 1) + ", " +
+                                    QString::number((AnswerNodeBuf.Index2 % 9) + 1) + "]");
+            step++;
+        }
     }
 
     free(StateB);
@@ -241,8 +251,16 @@ void MainWindow::on_GenerateButton_clicked()
     QPushButton *ButtonBuf1;
     QPushButton *ButtonBuf2;
 
-    //Заполнение первых 17 состояний
-    for (int i = 0; i < 17; i++) {
+    //Заполнение первых 4 состояний
+    for (int i = 0; i < 4; i++) {
+        ButtonBuf1 = (QPushButton *)(ui->gridLayout_A->itemAtPosition((i / 9),(i % 9))->widget());
+        ButtonBuf1->clicked();
+        ButtonBuf2 = (QPushButton *)(ui->gridLayout_B->itemAtPosition((i / 9),(i % 9))->widget());
+        ButtonBuf2->clicked();
+    }  //Заполнение первых MaxNumber мест
+
+    //Заполнение последних 13 состояний
+    for (int i = 5; i < 18; i++) {
         ButtonBuf1 = (QPushButton *)(ui->gridLayout_A->itemAtPosition((i / 9),(i % 9))->widget());
         ButtonBuf1->clicked();
         ButtonBuf2 = (QPushButton *)(ui->gridLayout_B->itemAtPosition((i / 9),(i % 9))->widget());

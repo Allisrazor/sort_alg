@@ -46,7 +46,7 @@ public:
     solver();
     ~solver();
 
-    QStack<AnswerNode> *Answer;                 //Запись движений пятнашек
+    QStack<AnswerNode> *Answer;                  //Запись движений пятнашек
 
     int Solve(TState StateA, TState StateB);     //Основная функция расчета
     int Analyze(TState StateA, TState StateB);   //Проверка верности исходных данных и расчета
@@ -66,7 +66,7 @@ private:
     bool IsSame(TState CurState, TState ExpectState);             //Проверка на достижение состояния B
     bool IsHead(TState State);                                    //Проверка: первое ли состояние
     int  GetNul(TState State, int NullPos);                       //Поиск нуля в массиве
-    int  GetNulNumber(TState State);                              //Поиск нуля в массиве
+    int  GetNulNumber(TState State);                              //Поиск номера нуля в массиве
     void OpenState(TState State, TState LastState, int index);    //Добавление новых состояний
     int  GetGreed(TState CurState, TState LastState);             //Найти жадность
     void GetResult(TState LastState);                             //Записать ходы в стэк

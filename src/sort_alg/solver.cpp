@@ -30,6 +30,7 @@ int solver::Solve(TState StateA, TState StateB)
         StrState.append(StateBuf[i]);
     }
     PIterHash.insert(StrState, IterNum);
+
     //Расчет
     while (not IsSame(StateBuf, StateB)) {
         for (int i = 0; i < NullNumber; i++) {
@@ -38,10 +39,11 @@ int solver::Solve(TState StateA, TState StateB)
         }
         StateBuf = StateQueue->top().value;
         StateQueue->pop();
+        if (IterNum > 7000000) {break;}
     }
 
     //Вывод данных
-    GetResult(StateBuf);
+    if (IsSame(StateBuf,StateB)) {GetResult(StateBuf);}
     int res = IterNum;
 
     //Очистка памяти

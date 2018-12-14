@@ -220,6 +220,12 @@ release/moc_mainwindow.cpp: C:/Qt/5.2.1/mingw48_32/include/QtWidgets/QMainWindow
 		C:/Qt/5.2.1/mingw48_32/include/QtGui/qicon.h \
 		C:/Qt/5.2.1/mingw48_32/include/QtCore/QStack \
 		C:/Qt/5.2.1/mingw48_32/include/QtCore/qstack.h \
+		../sort_alg/solver.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/QVector \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/QQueue \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qqueue.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/QHash \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/QString \
 		../sort_alg/mainwindow.h
 	C:/Qt/5.2.1/mingw48_32/bin/moc.exe $(DEFINES) -D__GNUC__ -DWIN32 $(INCPATH) ../sort_alg/mainwindow.h -o release/moc_mainwindow.cpp
 
@@ -357,6 +363,12 @@ release/main.o: ../sort_alg/main.cpp ../sort_alg/mainwindow.h \
 		C:/Qt/5.2.1/mingw48_32/include/QtGui/qicon.h \
 		C:/Qt/5.2.1/mingw48_32/include/QtCore/QStack \
 		C:/Qt/5.2.1/mingw48_32/include/QtCore/qstack.h \
+		../sort_alg/solver.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/QVector \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/QQueue \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qqueue.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/QHash \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/QString \
 		C:/Qt/5.2.1/mingw48_32/include/QtWidgets/QApplication \
 		C:/Qt/5.2.1/mingw48_32/include/QtWidgets/qapplication.h \
 		C:/Qt/5.2.1/mingw48_32/include/QtCore/qcoreapplication.h \
@@ -480,6 +492,12 @@ release/mainwindow.o: ../sort_alg/mainwindow.cpp ../sort_alg/mainwindow.h \
 		C:/Qt/5.2.1/mingw48_32/include/QtGui/qicon.h \
 		C:/Qt/5.2.1/mingw48_32/include/QtCore/QStack \
 		C:/Qt/5.2.1/mingw48_32/include/QtCore/qstack.h \
+		../sort_alg/solver.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/QVector \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/QQueue \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qqueue.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/QHash \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/QString \
 		ui_mainwindow.h \
 		C:/Qt/5.2.1/mingw48_32/include/QtCore/QVariant \
 		C:/Qt/5.2.1/mingw48_32/include/QtWidgets/QAction \
@@ -519,7 +537,8 @@ release/mainwindow.o: ../sort_alg/mainwindow.cpp ../sort_alg/mainwindow.h \
 		C:/Qt/5.2.1/mingw48_32/include/QtWidgets/qrubberband.h \
 		C:/Qt/5.2.1/mingw48_32/include/QtWidgets/QLabel \
 		C:/Qt/5.2.1/mingw48_32/include/QtWidgets/qlabel.h \
-		C:/Qt/5.2.1/mingw48_32/include/QtWidgets/QListView \
+		C:/Qt/5.2.1/mingw48_32/include/QtWidgets/QListWidget \
+		C:/Qt/5.2.1/mingw48_32/include/QtWidgets/qlistwidget.h \
 		C:/Qt/5.2.1/mingw48_32/include/QtWidgets/qlistview.h \
 		C:/Qt/5.2.1/mingw48_32/include/QtWidgets/QMenuBar \
 		C:/Qt/5.2.1/mingw48_32/include/QtWidgets/qmenubar.h \
@@ -540,10 +559,70 @@ release/mainwindow.o: ../sort_alg/mainwindow.cpp ../sort_alg/mainwindow.h \
 		C:/Qt/5.2.1/mingw48_32/include/QtGui/qtextcursor.h \
 		C:/Qt/5.2.1/mingw48_32/include/QtGui/qtextformat.h \
 		C:/Qt/5.2.1/mingw48_32/include/QtGui/qpen.h \
-		C:/Qt/5.2.1/mingw48_32/include/QtGui/qtextoption.h
+		C:/Qt/5.2.1/mingw48_32/include/QtGui/qtextoption.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtWidgets/QMessageBox \
+		C:/Qt/5.2.1/mingw48_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtWidgets/QDialog
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/mainwindow.o ../sort_alg/mainwindow.cpp
 
-release/solver.o: ../sort_alg/solver.cpp ../sort_alg/solver.h
+release/solver.o: ../sort_alg/solver.cpp ../sort_alg/solver.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/QVector \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qvector.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qglobal.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qconfig.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qfeatures.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qsystemdetection.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qprocessordetection.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qcompilerdetection.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qglobalstatic.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qbasicatomic.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qgenericatomic.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic_msvc.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic_integrity.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qoldbasicatomic.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic_vxworks.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic_power.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic_alpha.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic_armv7.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic_armv6.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic_armv5.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic_bfin.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic_ia64.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic_mips.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic_s390.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic_sh4a.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic_sparc.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic_x86.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic_cxx11.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic_gcc.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qatomic_unix.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qmutex.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qlogging.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qflags.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qtypeinfo.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qtypetraits.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qsysinfo.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qiterator.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qlist.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qarraydata.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qpoint.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qnamespace.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/QStack \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qstack.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/QQueue \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qqueue.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/QHash \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qhash.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qchar.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qpair.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/QString \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qstring.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qbytearray.h \
+		C:/Qt/5.2.1/mingw48_32/include/QtCore/qstringbuilder.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/solver.o ../sort_alg/solver.cpp
 
 release/moc_mainwindow.o: release/moc_mainwindow.cpp 
